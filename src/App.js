@@ -1,6 +1,7 @@
 import { createMedia } from "@artsy/fresnel";
 import MobileHomepage from "./components/MobileHomepage";
 import DesktopHomepage from "./components/DesktopHomepage";
+
 function App() {
   const { MediaContextProvider, Media } = createMedia({
     // breakpoints values can be either strings or integers

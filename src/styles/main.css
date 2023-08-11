@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Pixeboy";
+  src: url("/fonts/Pixeboy-z8XGD.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto mono";
+  src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Menlo";
+  src: url("/fonts/MesloLGL-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: "Menlo";
+  font-size: 10pt;
+}
+
+.logo {
+  font-family: "Pixeboy";
+}

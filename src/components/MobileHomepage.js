@@ -20,7 +20,7 @@ function MobileHomepage() {
 
   return (
     <div style={{ marginBottom: "110px" }}>
-      <Menu container borderless fixed="top" style={headerStyle}>
+      <Menu borderless fixed="top" style={headerStyle}>
         <Container
           as="h2"
           style={{
