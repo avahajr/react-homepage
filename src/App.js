@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { createMedia } from "@artsy/fresnel";
+import MobileHomepage from "./components/MobileHomepage";
+import DesktopHomepage from "./components/DesktopHomepage";
 function App() {
+  const { MediaContextProvider, Media } = createMedia({
+    // breakpoints values can be either strings or integers
+    breakpoints: {
+      xs: 0,
+      sm: 768,
+      md: 768,
+      lg: 1024,
+      xl: 1192,
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MediaContextProvider>
+      <Media at="xs">
+        {/* Mobile app */}
+        <MobileHomepage />
+      </Media>
+      <Media greaterThan="xs">
+        {/* Desktop app, which is already built */}
+        <DesktopHomepage />
+      </Media>
+    </MediaContextProvider>
   );
 }
 
