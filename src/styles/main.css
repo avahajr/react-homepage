@@ -19,4 +19,12 @@
 
 .logo {
   font-family: "Pixeboy";
+  font-size: 2.5em;
+  /* height: 30px; */
+  display: inline-block;
+  /* padding-bottom: 10px; */
+}
+
+.ui.grid .column .menu {
+  margin-top: 18px;
 }
