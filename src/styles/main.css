@@ -28,3 +28,8 @@
 .ui.grid .column .menu {
   margin-top: 18px;
 }
+
+.middle-aligned-column {
+  display: flex !important;
+  align-items: center;
+}

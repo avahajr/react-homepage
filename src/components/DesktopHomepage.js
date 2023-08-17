@@ -4,7 +4,7 @@ import { Menu, Container, Grid } from "semantic-ui-react";
 function DesktopHomepage() {
   return (
     <Grid as={Container}>
-      <Grid.Column width={8}>
+      <Grid.Column className="middle-aligned-column" width={8}>
         <img
           src="cat-logo.png"
           className="cat logo"
@@ -18,7 +18,7 @@ function DesktopHomepage() {
         />
         <h1 className="logo"> Ava Hajratwala </h1>
       </Grid.Column>
-      <Grid.Column>
+      <Grid.Column width={8}>
         <Menu secondary>
           <Menu.Item as="a" href="./" active position="right">
             About
