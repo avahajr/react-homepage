@@ -12,9 +12,24 @@
   src: url("/fonts/MesloLGL-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Newsreader";
+  src: url("/fonts/Newsreader-VariableFont_opsz,wght.ttf")
+    format("truetype-variations");
+}
+@font-face {
+  font-family: "Newsreader italic";
+  src: url("/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype-variations");
+}
+.item {
+  font-family: "Menlo" !important;
+  font-size: 11pt;
+}
+
 * {
-  font-family: "Menlo";
-  font-size: 10pt;
+  font-family: "Newsreader";
+  font-size: 13pt;
 }
 
 .logo {
@@ -25,11 +40,21 @@
   /* padding-bottom: 10px; */
 }
 
+h1 {
+  font-family: "Newsreader italic";
+  font-weight: 500;
+  /* font-style: italic; */
+}
+
 .ui.grid .column .menu {
   margin-top: 18px;
 }
 
-.middle-aligned-column {
+.center-logo {
   display: flex !important;
   align-items: center;
+}
+
+.main-menu {
+  box-shadow: 0 4px 3px -1.5px rgb(202, 202, 202) !important;
 }
