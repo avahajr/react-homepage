@@ -24,12 +24,25 @@
 }
 .item {
   font-family: "Menlo" !important;
-  font-size: 11pt;
+  font-size: 12pt;
+}
+.active.item {
+  font-weight: 600 !important;
 }
 
 * {
+  font-family: "menlo";
+}
+
+p {
   font-family: "Newsreader";
-  font-size: 13pt;
+  font-size: 13.5pt;
+  line-height: 33px;
+}
+a {
+  font-family: "Newsreader";
+  font-size: 13.5pt;
+  line-height: 33px;
 }
 
 .logo {
@@ -41,9 +54,8 @@
 }
 
 h1 {
-  font-family: "Newsreader italic";
-  font-weight: 500;
-  /* font-style: italic; */
+  font-family: "Pixeboy" !important;
+  font-size: 35px !important;
 }
 
 .ui.grid .column .menu {
@@ -53,6 +65,10 @@ h1 {
 .center-logo {
   display: flex !important;
   align-items: center;
+}
+
+.span {
+  font-family: "Menlo" !important;
 }
 
 .main-menu {
