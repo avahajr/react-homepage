@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Image, Divider } from "semantic-ui-react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import PopupEmoji from "./PopupEmoji";
 import "fomantic-ui-css/semantic.min.css";
+import CaptionedEmoji from "./CaptionedEmoji";
 
 const DesktopContent = () => {
   const [markdown, setMarkdown] = useState("");
@@ -18,12 +18,15 @@ const DesktopContent = () => {
       <Divider hidden />
       <Grid stackable container relaxed>
         <Grid.Column width={5}>
-          <Image circular src="pfp.png" />
+          <Image centered size="medium" circular src="pfp.png" />
           <Divider hidden />
-          <PopupEmoji
-            emojiName=":guitar:"
-            popupContent="Classical guitarist"
-            position="bottom center"
+          <Divider horizontal content="hobbies" />
+          <CaptionedEmoji emoji={":guitar:"} caption={"Classical guitar"} />
+          <CaptionedEmoji emoji={":saxophone:"} caption={"Saxophone"} />
+          <CaptionedEmoji emoji={":art:"} caption={"Watercolor"} />
+          <CaptionedEmoji
+            emoji={":fishing_pole_and_fish:"}
+            caption={"Fishing"}
           />
         </Grid.Column>
         <Grid.Column width={11}>

@@ -31,17 +31,16 @@
 }
 
 * {
-  font-family: "menlo";
+  font-family: "Menlo";
 }
-
 p {
   font-family: "Newsreader";
-  font-size: 13.5pt;
-  line-height: 33px;
+  font-size: 1.3em;
+  line-height: 33px !important;
 }
 a {
   font-family: "Newsreader";
-  font-size: 13.5pt;
+  font-size: 1em;
   line-height: 33px;
 }
 
