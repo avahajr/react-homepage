@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Grid, Image, Divider } from "semantic-ui-react";
+import { Grid, Image, Divider, Icon, Container } from "semantic-ui-react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import "fomantic-ui-css/semantic.min.css";
 import CaptionedEmoji from "./CaptionedEmoji";
@@ -28,6 +28,12 @@ const DesktopContent = () => {
             emoji={":fishing_pole_and_fish:"}
             caption={"Fishing"}
           />
+          <Container textAlign="center">
+            <Divider hidden />
+            <Icon link color="blue" name="linkedin" size="big" />
+            <Icon link color="blue" name="github" size="big" />
+            <Icon link color="blue" name="instagram" size="big" />
+          </Container>
         </Grid.Column>
         <Grid.Column width={11}>
           <h1>About me</h1>
@@ -35,6 +41,8 @@ const DesktopContent = () => {
           <ReactMarkdown>{markdown}</ReactMarkdown>
         </Grid.Column>
       </Grid>
+
+      <Divider hidden />
     </>
   );
 };

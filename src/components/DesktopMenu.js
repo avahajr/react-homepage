@@ -23,9 +23,7 @@ function DesktopMenu() {
         <Menu.Item as="a" href="./" active position="right">
           About
         </Menu.Item>
-        <Menu.Item as="a" href="./devblog ">
-          Devblog
-        </Menu.Item>
+
         <Menu.Item as="a" href="./project-hub">
           Projects
         </Menu.Item>

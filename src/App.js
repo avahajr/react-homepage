@@ -2,6 +2,8 @@ import { createMedia } from "@artsy/fresnel";
 import DesktopMenu from "./components/DesktopMenu";
 import MobileMenu from "./components/MobileMenu";
 import DesktopContent from "./components/DesktopContent";
+import MobileHeading from "./components/MobileHeading";
+import MobileContent from "./components/MobileContent";
 
 function App() {
   const { MediaContextProvider, Media } = createMedia({
@@ -19,6 +21,8 @@ function App() {
     <MediaContextProvider>
       <Media at="xs">
         {/* Mobile app */}
+        <MobileHeading />
+        <MobileContent />
         <MobileMenu />
       </Media>
       <Media greaterThan="xs">

@@ -73,3 +73,6 @@ h1 {
 .main-menu {
   box-shadow: 0 4px 3px -1.5px rgb(202, 202, 202) !important;
 }
+.ui.icon {
+  padding: 100px;
+}
